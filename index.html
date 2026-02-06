@@ -1,14 +1,13 @@
 <!DOCTYPE html><html lang="en"><head>
-		<title>TEXT-IMAGE.com :: Share</title>
+		<title>VINIE LAND</title>
 		<meta charset="utf-8">
-		<meta name="author" content="Patrik Roos">
-		<meta name="description" content="View a shared text-image">
+	
 		<meta property="og:image" content="images/btn-html.jpg">
 		<meta name="robots" content="noindex">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+	
 
 		<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-73530-1"></script>
 		<script>
@@ -21,9 +20,71 @@
 	</head>
 
 	<body>
-		<header>
-			<a href="https://www.text-image.com/"><img src="images/ti-logo.jpg" alt="TEXT-IMAGE.com" width="500" height="60" class="logo"></a>
-		</header>
+	<style>
+body{
+  margin:0;
+  background: radial-gradient(circle at center,#050510,#000);
+  color:#00ffd5;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  overflow:hidden;
+  font-family:monospace;
+}
+
+/* moving stars background */
+body::before{
+  content:"";
+  position:fixed;
+  width:200%;
+  height:200%;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size:40px 40px;
+  opacity:0.08;
+  animation:stars 80s linear infinite;
+}
+
+@keyframes stars{
+  from{transform:translateY(0);}
+  to{transform:translateY(-900px);}
+}
+
+/* ascii face */
+pre{
+  font-size:6px;
+  line-height:6px;
+  letter-spacing:1px;
+  text-align:center;
+  opacity:0;
+  filter:blur(12px);
+  transform:scale(1.4);
+  animation:form 6s ease forwards;
+  color:#00ffd5;
+}
+
+/* forming animation */
+@keyframes form{
+  0%{opacity:0; filter:blur(18px); transform:scale(1.5);}
+  40%{opacity:0.4; filter:blur(8px);}
+  70%{opacity:0.8; filter:blur(2px);}
+  100%{opacity:1; filter:blur(0); transform:scale(1);}
+}
+
+/* bottom text */
+h1{
+  position:absolute;
+  bottom:40px;
+  font-weight:300;
+  letter-spacing:6px;
+  opacity:0;
+  animation:fade 3s 5.5s forwards;
+}
+
+@keyframes fade{
+  to{opacity:0.85;}
+}
+</style>
 <div class="tiview">
 <!-- IMAGE BEGINS HERE -->
 <pre id="tiresult" style="font-size: 9px; background-color: #000000; font-weight: bold; padding: 4px 5px; --fs: 9px;"><b style="color:#FFFFFF">vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vinie♡vini</b>
