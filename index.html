@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+.ascii-bg{
+  opacity:0;
+  animation:fadeIn 1.2s ease forwards;
+  animation-delay:0.3s;
+}
+
+@keyframes fadeIn{
+  to{opacity:1;}
+}
+</style>
+
 <meta charset="UTF-8">
 <title>Vinie Land</title>
-
+<style>
+html,body{
+  margin:0;
+  background:#ffc0cb;
+  overflow:hidden;
+}
+</style>
 <style>
 body{
   margin:0;
@@ -19,11 +37,6 @@ body{
   left:0;
   width:100vw;
   height:100vh;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
   z-index:1;
   overflow:hidden;
 }
@@ -59,12 +72,14 @@ body{
 
 pre{
   position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
+  top:0;
+  left:0;
+  transform:none;
   display:block;
+
   width:100vw;
-  margin:0 auto;
+  height:100vh;
+  margin:0;
   padding:0;
   box-sizing:border-box;
 
@@ -72,14 +87,12 @@ pre{
   background:none;
   border:none;
 
-  white-space:pre;        /* never wrap */
-  overflow:hidden;        /* hide overflow */
+  white-space:pre;
+  overflow:hidden;
   text-align:center;
 
-  /* font auto shrink to fit */
   font-size: clamp(1px, 0.30vw, 6px);
   line-height: clamp(1px, 0.30vw, 6px);
-
   letter-spacing:0px;
 }
 
