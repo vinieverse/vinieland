@@ -34,23 +34,23 @@ body{
 pre{
   display:block;
   width:100vw;
-  max-width:100vw;
-  margin:0;
-  padding:10px 0;
+  margin:0 auto;
+  padding:0;
   box-sizing:border-box;
 
+  color:#ff2f92;
   background:none;
-  color:#ffffff;
+  border:none;
 
-  white-space:pre-wrap;   /* allows wrap */
-  word-break:break-word;  /* force wrap */
-  overflow:hidden;
+  white-space:pre;        /* never wrap */
+  overflow:hidden;        /* hide overflow */
+  text-align:center;
 
-  text-align:left;
+  /* font auto shrink to fit */
+  font-size: clamp(2px, 0.50vw, 8px);
+  line-height: clamp(3px, 0.55vw, 9px);
 
-  /* auto fit font */
-  font-size: clamp(3px, 0.6vw, 10px);
-  line-height: clamp(3px, 0.6vw, 10px);
+  letter-spacing:0px;
 }
 
 .msg{
